@@ -13,7 +13,7 @@ const Header = () => {
     <div className="bg-[#2B2B2B] font-global z-999 fixed w-full">
       <div className="max-w-[1280px] bg-[#2B2B2B] py-[20px] mx-auto px-[16px] xl:px-0 flex items-center justify-between">
         <a href="#">
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo" className="w-[200px] lg:w-auto" />
         </a>
         <nav className='hidden md:flex items-center md:gap-[20px] xl:gap-[40px] text-white font-[600]'>
           <a href="#">Marketplace</a>
