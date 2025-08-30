@@ -23,10 +23,10 @@ const Header = () => {
            <FaRegUser /> Sign Up
           </button>
         </nav>
-        <div className="text-white text-[24px] block md:hidden" onClick={handleClick}>
+        <div className="text-white text-[26px] block md:hidden" onClick={handleClick}>
             {nav ? <IoClose /> : <CgMenuLeft />}
         </div>
-        <nav className={`absolute flex md:hidden flex-col w-full -z-1 left-0 bg-[#2B2B2B] px-[20px] text-white font-[500] py-[40px] transition-all duration-500 ${nav ? 'top-[70px]' : 'top-[-250px]'}`}>
+        <nav className={`absolute flex md:hidden flex-col w-full -z-1 left-0 bg-[#2B2B2B] px-[20px] text-white font-[500] py-[40px] transition-all duration-500 ${nav ? 'top-[65px]' : 'top-[-250px]'}`}>
           <a href="#" onClick={handleClick} className="border-b md:border-none border-[#ffffff28] pb-[20px] md:pb-0 mb-[20px] md:mb-0">Marketplace</a>
           <a href="#" onClick={handleClick} className="border-b md:border-none border-[#ffffff28] pb-[20px] md:pb-0 mb-[20px] md:mb-0">Rankings</a>
           <a href="#" onClick={handleClick} className="mb-[30px] md:mb-0">Connect a wallet</a>
