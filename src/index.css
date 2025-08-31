@@ -9,3 +9,7 @@
 .font-spacemono {
   font-family: 'Space Mono', monospace;
 }
+
+body{
+  background: #2B2B2B;
+}

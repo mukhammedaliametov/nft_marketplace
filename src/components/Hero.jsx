@@ -6,7 +6,7 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <div className="bg-[#2B2B2B] min-h-[100vh] font-global">
+    <div className="min-h-[100vh] font-global">
       <div className="max-w-[1180px] mx-auto flex flex-col sm:flex-row justify-between items-top gap-[20px] pt-[150px] px-[30px] xl:px-0">
         <div className="w-full sm:w-[330px] md:w-[510px] text-white flex flex-col gap-[20px]">
           <h1 className="text-[28px]/[35px] sm:text-[38px]/[45px] lg:text-[65px]/[72px] font-semibold">
