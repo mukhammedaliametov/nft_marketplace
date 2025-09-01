@@ -34,11 +34,11 @@ const Creators = () => {
       <div className="flex items-end justify-between">
         <div>
           <h2 className="text-[28px] lg:text-[38px] font-semibold">
-          Top creators
-        </h2>
-        <p className="text-[18px] lg:text-[22px]">
-          Checkout Top Rated Creators on the NFT Marketplace
-        </p>
+            Top creators
+          </h2>
+          <p className="text-[18px] lg:text-[22px]">
+            Checkout Top Rated Creators on the NFT Marketplace
+          </p>
         </div>
         <button className="hidden md:flex items-center gap-[8px] border border-[#A259FF] rounded-[20px] py-[15px] px-[25px] font-semibold cursor-pointer">
           <LuRocket className="text-[#A259FF]" /> View Rankings
@@ -47,20 +47,25 @@ const Creators = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[35px] my-[50px]">
         {creatorsItems.map((item, index) => {
           return (
-            <div key={index} className="relative bg-[#3B3B3B] border border-[#3B3B3B] hover:border-[#A259FF] hover:bg-transparent cursor-pointer rounded-[20px] flex items-center flex-col justify-between transition-all duration-300 group">
-              <p className="absolute top-0 left-0 mx-[15px] mt-[12px] bg-[#2B2B2B] group-hover:bg-[#3B3B3B] px-[12px] py-[5px] rounded-full font-monospace text-[#858584]">{index + 1}</p>
+            <div
+              key={index}
+              className="relative bg-[#3B3B3B] border border-[#3B3B3B] hover:border-[#A259FF] hover:bg-transparent cursor-pointer rounded-[20px] flex items-center flex-col justify-between transition-all duration-300 group"
+            >
+              <p className="absolute top-0 left-0 mx-[15px] mt-[12px] bg-[#2B2B2B] group-hover:bg-[#3B3B3B] px-[12px] py-[5px] rounded-full font-monospace text-[#858584]">
+                {index + 1}
+              </p>
               <img src={item.avatar} alt="avatar" className="my-[20px]" />
               <p className="text-[22px] font-semibold mb-[3px]">{item.name}</p>
               <p className="text-[#858584] mb-[25px]">
-                Total Sales: <span className='text-white'>{item.sales}</span>
+                Total Sales: <span className="text-white">{item.sales}</span>
               </p>
             </div>
           );
         })}
       </div>
-      <button className="flex md:hidden items-center gap-[8px] border border-[#A259FF] rounded-[20px] py-[15px] px-[25px] font-semibold cursor-pointer w-full justify-center mb-[30px]">
-          <LuRocket className="text-[#A259FF]" /> View Rankings
-        </button>
+      <button className="flex md:hidden items-center gap-[8px] border border-[#A259FF] rounded-[20px] py-[15px] px-[25px] mt-[-20px] font-semibold cursor-pointer w-full justify-center mb-[30px]">
+        <LuRocket className="text-[#A259FF]" /> View Rankings
+      </button>
     </div>
   );
 };
