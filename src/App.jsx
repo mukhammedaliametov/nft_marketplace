@@ -6,6 +6,9 @@ import Creators from './components/Creators';
 import Categories from './components/Categories';
 import Discover from './components/Discover';
 import Mashrooms from './components/Mashrooms';
+import Works from './components/Works';
+import Subscirbe from './components/Subscirbe';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
       <Categories />
       <Discover />
       <Mashrooms />
+      <Works />
+      <Subscirbe />
+      <Footer />
     </>
   );
 };
